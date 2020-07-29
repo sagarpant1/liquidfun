@@ -115,7 +115,7 @@ void fghParseCommandLineArguments ( int* pargc, char** argv, char **pDisplayName
 
         if( fps )
         {
-            int interval;
+            int interval = 0;
             sscanf( fps, "%d", &interval );
 
             if( interval <= 0 )
